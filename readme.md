@@ -18,7 +18,7 @@ Node 12+ is needed to use it and it must be `import`ed instead of `require`d.
 [npm][]:
 
 ```sh
-npm install micromark-extension-citekey
+npm install @bernardjoseph/micromark-extension-citekey
 ```
 
 ## Use
@@ -34,7 +34,7 @@ And our script, `example.js`, looks as follows:
 ```js
 import fs from 'node:fs'
 import {micromark} from 'micromark'
-import {citekey, citekeyHtml} from 'micromark-extension-citekey'
+import {citekey, citekeyHtml} from '@bernardjoseph/micromark-extension-citekey'
 
 const out = micromark(fs.readFileSync('example.md'), {
   extensions: [citekey()],
@@ -74,7 +74,7 @@ For example, running the script:
 
 ```js
 import {micromark} from 'micromark'
-import {citekey, citekeyHtml} from 'micromark-extension-citekey'
+import {citekey, citekeyHtml} from '@bernardjoseph/micromark-extension-citekey'
 
 const out = micromark('@müller', {
   extensions: [citekey({strict: true})],

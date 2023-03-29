@@ -7,7 +7,7 @@ import test from 'tape'
 import {micromark} from 'micromark'
 import {citekey, citekeyHtml} from '../dev/index.js'
 
-test('micromark-extension-citekey', (t) => {
+test('@bernardjoseph/micromark-extension-citekey', (t) => {
   t.equal(
     micromark('@a.müller. @{a.müller.}', options({strict: true})),
     '<p><span class="citekey">@<span class="citeid=">a.m</span></span>üller. @{a.müller.}</p>',
